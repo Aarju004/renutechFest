@@ -32,7 +32,7 @@ const WebLayout = () => {
       </div>
 
       {/* Website body  */}
-      <div className="basis-11/12 flex flex-col bg-slate-500 justify-between overflow-auto h-screen">
+      <div className=" flex flex-col bg-slate-500 justify-between overflow-auto h-screen">
         <Routes>
           {WebRoutes.map(({ path, element }, index) => (
             <Route key={index} path={path} element={element} />

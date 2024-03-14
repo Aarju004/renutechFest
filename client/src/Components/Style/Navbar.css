@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+
+.nav-cont {
+  font-family: "Megrim", system-ui;
+}
+
+#check:checked ~ ul {
+  display: block;
+}
+
+.menu-list {
+  background-image: url("../assets/moon_image.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}

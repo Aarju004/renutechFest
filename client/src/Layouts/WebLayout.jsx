@@ -25,17 +25,14 @@ const WebLayout = () => {
   ];
 
   return (
-    <div className="flex flex-col h-screen bg-red-300">
-      {/* navigation menu  */}
+    <div className=" flex flex-col justify-between h-screen ">
       <Navbar />
-      {/* Website body  */}
-      <div className=" flex flex-col justify-between h-screen">
-        <Routes>
-          {WebRoutes.map(({ path, element }, index) => (
-            <Route key={index} path={path} element={element} />
-          ))}
-        </Routes>
-      </div>
+
+      <Routes>
+        {WebRoutes.map(({ path, element }, index) => (
+          <Route key={index} path={path} element={element} />
+        ))}
+      </Routes>
     </div>
   );
 };

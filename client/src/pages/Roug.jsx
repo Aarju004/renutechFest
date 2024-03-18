@@ -1,12 +1,26 @@
 import React from "react";
-import "./Style/Home.css";
+
+// const Animations = document.querySelectorAll("#animation");
+// window.onscroll = () => {
+//   Animations.forEach((ani) => {
+//     let top = window.scrollY;
+//     let offset = ani.offsetTop - 150;
+//     let height = ani.offsetheight;
+
+//     if (top >= offset && top < offset + height) {
+//       ani.classList.add("show-animation");
+//     } else {
+//       ani.classList.remove("show-animation");
+//     }
+//   });
+// };
 
 const Home = () => {
   return (
-    <div className="home-container bg-black w-full max-h-fit">
+    <div className="home-cont">
       {/* hero section  */}
-      <div className="">
-        <div className="py-24 md:px-10 w-fit text-white mt-20">
+      <div className="bg-black">
+        <div className="py-24 md:px-10 w-fit">
           <img
             id="animation"
             src="/assets/renuTech.svg"
@@ -46,7 +60,7 @@ const Home = () => {
       </div>
       {/* Section 2 */}
       <div
-        className=" w-full h-full mt-48 bg-black"
+        className=" w-full h-full mt-28  "
         style={{
           backgroundImage: "url(/assets/wave.png)",
           backgroundSize: "contain",
@@ -64,43 +78,29 @@ const Home = () => {
             a new era of excellence.
           </p>
         </div>
-        <div className="mt-72">
-          <img
-            className="absolute left-8"
-            src="/assets/fire_stone.svg"
-            alt=""
-          />
-        </div>
-        <div className="w-full h-full mt-96">
-          <div className="text-white text-2xl font-bold px-40 text-center ">
-            <p className="">
-              "Embark on an unforgettable journey with SPNREC's inaugural
-              celebration of innovation, collaboration, and technology. Engage
-              alongside students, esteemed faculty, and industry experts for a
-              day brimming with cutting-edge projects, immersive workshops, and
-              enlightening discussions. Witness the dawn of a new era of
-              excellence at SPNREC!"
-            </p>
-            <p
-              className="mt-8 tracking-wide uppercase"
-              style={{ fontFamily: "Mitr, sans-serif" }}
-            >
-              08-10 april 2024 <br />
-              venue:&nbsp;spnrec,araria
-            </p>
-          </div>
-          <div className=" mt-96 flex flex-col items-center">
-            <img src="/assets/tech.png" alt="" />
-            <img className="pt-20" src="/assets/cultural.png" alt="" />
-          </div>
-          <div className="w-full h-full mt-16">
-            <img
-              className="absolute right-0"
-              src="/assets/aeroplane.svg"
-              alt=""
-            />
-            <img className="pt-96" src="/assets/hot_balloon.svg" alt="" />
-          </div>
+      </div>
+
+      {/* Section 3 */}
+      <div
+        className="w-full h-full"
+        style={{
+          backgroundImage: "url(/assets/fire_stone.svg",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="text-white text-2xl font-bold px-40 text-center ">
+          <p className="">
+            "Embark on an unforgettable journey with SPNREC's inaugural
+            celebration of innovation, collaboration, and technology. Engage
+            alongside students, esteemed faculty, and industry experts for a day
+            brimming with cutting-edge projects, immersive workshops, and
+            enlightening discussions. Witness the dawn of a new era of
+            excellence at SPNREC!"
+          </p>
+          <p className="mt-8">
+            08-10 april 2024 <br />
+            venue:&nbsp;spnrec,araria
+          </p>
         </div>
       </div>
     </div>
